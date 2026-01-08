@@ -1,7 +1,7 @@
 {
   "name": "@swerr/cli",
   "version": "0.0.1",
-  "description": "Swagger but for... errors! Automatically document your errors based on JSDocs comments.",
+  "description": "Swagger but for errors! Automatically document your errors based on JSDocs comments.",
   "type": "module",
   "bin": {
     "swerr": "./dist/swerr.js"
@@ -10,7 +10,16 @@
     "build": "tsc",
     "watch": "tsc --watch"
   },
-  "keywords": [],
+  "keywords": [
+    "swerr",
+    "errors",
+    "documentation",
+    "api",
+    "jsdoc",
+    "jsdocs",
+    "docs",
+    "cli"
+  ],
   "author": "Shukaaa",
   "license": "ISC",
   "dependencies": {
@@ -22,5 +31,13 @@
     "@types/express": "^5.0.3",
     "@types/node": "^24.3.2",
     "typescript": "^5.9.2"
+  },
+  "files": [
+    "dist",
+    "package.json",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public"
   }
 }

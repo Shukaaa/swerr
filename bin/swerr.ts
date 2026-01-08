@@ -4,6 +4,7 @@ import {readFileSync} from "node:fs";
 import path from "path";
 import {fileURLToPath} from "node:url";
 import {runCommand} from "./commands/run.command.js";
+import {initCommand} from "./commands/init.command.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -19,7 +20,7 @@ cli
 		.version(packageJson.version);
 
 const commandModules = [
-	runCommand
+	runCommand, initCommand
 ];
 
 for (const commandModule of commandModules) {

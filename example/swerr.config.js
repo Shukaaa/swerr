@@ -1,4 +1,4 @@
-import {markdownConverter} from "@swerr/converter"
+import {markdownConverter, htmlConverter} from "@swerr/converter"
 
 export default {
     sourceFile: {
@@ -23,6 +23,12 @@ export default {
     converter: [
         {
             factory: markdownConverter,
+            config: {
+                outputPath: "./docs",
+            }
+        },
+        {
+            factory: htmlConverter,
             config: {
                 outputPath: "./docs",
             }
