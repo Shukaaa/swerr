@@ -1,0 +1,26 @@
+{
+  "name": "errogger",
+  "version": "0.0.1",
+  "description": "Swagger but for... errors! Document your errors based on JSDocs comments.",
+  "type": "module",
+  "bin": {
+    "errogger": "./dist/errogger.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch"
+  },
+  "keywords": [],
+  "author": "Shukaaa",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^14.0.1",
+    "express": "^5.1.0",
+    "gradient-string": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.3.2",
+    "typescript": "^5.9.2"
+  }
+}

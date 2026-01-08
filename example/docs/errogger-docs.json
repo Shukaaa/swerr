@@ -1,0 +1,27 @@
+{
+  "name": "Muffin API - Error Documentation",
+  "description": "The API description",
+  "version": "1.0.5",
+  "errors": [
+    {
+      "name": "DatabaseException",
+      "description": "Exception class with automatic naming based on the class name.",
+      "tags": [
+        {
+          "name": "error",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "ThisIsASimpleDatabaseError",
+      "description": "Exception class with naming based on the error property.",
+      "tags": [
+        {
+          "name": "error",
+          "description": "ThisIsASimpleDatabaseError"
+        }
+      ]
+    }
+  ]
+}
